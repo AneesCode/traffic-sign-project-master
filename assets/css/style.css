@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.light {
+    position: absolute;
+    top: 36vh;
+    left: 127vh;
+    width: 50px;
+    transform: rotate3d(11, 9, 4, 66deg);
+}
+
+.light-1 {
+    bottom: 110px;
+    top: 66%;
+    left: 53%;
+}
+.light-2{
+    width: 50px;
+    position: absolute;
+    right: 59%;
+    transform: rotate3d(11, 9, 4, -293deg);
+    top: 35%;
+}
+.light-3 {
+    width: 50px;
+    position: absolute;
+    left: 53%;
+    top: 9%;
+    width: 50px;
+    transform: rotateX(50deg);
+}
+
+body {
+    background: url(../images/360_F_251213671_xl00htD5OEi3kPB6fgHon0gSmptclmpY.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.track {
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 0;
+    width: 1000vw;
+    height: 20vh;
+    animation: trackanimation 6s linear infinite;
+}
+
+.road {
+    width: 100%;
+    height: 152px;
+}
+
+.road-1 {
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    transform: rotate(-90deg) translatey(360px);
+    z-index: -1;
+    max-width: 887px;
+}
+
+.car {
+
+    animation: forward 4s linear infinite;
+}
+
+#car {
+    width: 212px;
+    position: absolute;
+    top: 35%;
+}
+
+@keyframes forward {
+    0% {
+        transform: translateX(-200px);
+    }
+
+    100% {
+        transform: translateX(1400px);
+    }
+}
+.car-3 {
+
+    animation: forward3 4s linear infinite;
+}
+
+#car-3 {
+    width: 130px;
+    position: absolute;
+    top: 0;
+    left: 55%;
+}
+
+@keyframes forward3 {
+    100% {
+        transform: translateY(-200px);
+    }
+
+    0% {
+        transform: translateY(800px);
+    }
+}
+.car-1 {
+
+    animation: forward1 3s linear infinite;
+}
+
+#car-1 {
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 46%;
+}
+
+@keyframes forward1 {
+    0% {
+        transform: translateY(-200px);
+    }
+
+    100% {
+        transform: translateY(800px);
+    }
+}
+.car-2 {
+
+    animation: forward2 3s  linear infinite;
+}
+
+#car-2 {
+    width: 250px;
+    position: absolute;
+    top: 47%;
+}
+
+@keyframes forward2 {
+    100% {
+        transform: translateZ(200px);
+    }
+
+    0% {
+        transform: translateX(1400px);
+    }
+}
