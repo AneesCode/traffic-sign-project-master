@@ -73,4 +73,4 @@ function volgendefoto() {
     }
 }
 
-setInterval(volgendefoto, 6000);
+setInterval(volgendefoto, 5000);
